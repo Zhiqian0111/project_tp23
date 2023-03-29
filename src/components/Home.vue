@@ -23,8 +23,9 @@
               mode="horizontal"
               background-color="#b7d07a"
               text-color="#fff"
+              router
               >
-                <el-menu-item index="1">Option1</el-menu-item>
+                <el-menu-item :index="'/'+'test'">Option1</el-menu-item>
                 <el-submenu index="2">
                   <template slot="title">Option2</template>
                   <el-menu-item index="2-1">op1</el-menu-item>
