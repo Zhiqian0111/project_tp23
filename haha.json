@@ -1,0 +1,318 @@
+{
+  "name": "TOTAL",
+  "shortName": "TOTAL",
+  "children": [
+    {
+      "id": 1,
+      "name": "Services",
+      "shortName": "Services",
+      "children": [
+        {
+          "id": 1,
+          "name": "3rd Platform",
+          "shortName": "3rd Platform",
+          "children": [
+            {
+              "id": 1,
+              "name": "Social",
+              "shortName": "Social",
+              "size": 4111.526363551428
+            },
+            {
+              "id": 1,
+              "name": "Security",
+              "shortName": "Security",
+              "size": 24953.155536810675
+            },
+            {
+              "id": 1,
+              "name": "Big Data",
+              "shortName": "Big Data",
+              "size": 51270.82078540825
+            },
+            {
+              "id": 1,
+              "name": "Mobility",
+              "shortName": "Mobility",
+              "size": 39491.67188648776
+            },
+            {
+              "id": 1,
+              "name": "3D Print",
+              "shortName": "3D Print",
+              "size": 3001.384475642815
+            },
+            {
+              "id": 1,
+              "name": "Cognitive",
+              "shortName": "Cognitive",
+              "size": 2415.8804039539086
+            },
+            {
+              "id": 1,
+              "name": "IoT",
+              "shortName": "IoT",
+              "size": 72508.20284878819
+            },
+            {
+              "id": 1,
+              "name": "AR/VR",
+              "shortName": "AR/VR",
+              "size": 1305.5586462912008
+            },
+            {
+              "id": 1,
+              "name": "Robotics",
+              "shortName": "Robotics",
+              "size": 16491.60393891927
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "name": "2nd Platform",
+          "shortName": "2nd Platform",
+          "size": 16491.60393891927
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Telecom Services",
+      "shortName": "Telecom Services",
+      "children": [
+        {
+          "id": 3,
+          "name": "2nd Platform",
+          "shortName": "2nd Platform",
+          "size": 137204.52773518956
+        },
+        {
+          "id": 3,
+          "name": "3rd Platform",
+          "shortName": "3rd Platform",
+          "children": [
+            {
+              "id": 3,
+              "name": "Mobility",
+              "shortName": "Mobility",
+              "size": 604980.532171522
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "name": "Rest of ICT Spending",
+          "shortName": "Rest of ICT Spending",
+          "size": 220476.03229163607
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Infrastructure",
+      "shortName": "Infrastructure",
+      "children": [
+        {
+          "id": 2,
+          "name": "3rd Platform",
+          "shortName": "3rd Platform",
+          "children": [
+            {
+              "id": 2,
+              "name": "IoT",
+              "shortName": "IoT",
+              "size": 8490.246913739857
+            },
+            {
+              "id": 2,
+              "name": "Cognitive",
+              "shortName": "Cognitive",
+              "size": 1320.4384922323916
+            },
+            {
+              "id": 2,
+              "name": "Big Data",
+              "shortName": "Big Data",
+              "size": 15436.65531821499
+            },
+            {
+              "id": 2,
+              "name": "Cloud",
+              "shortName": "Cloud",
+              "size": 17821.065031735805
+            },
+            {
+              "id": 2,
+              "name": "Social",
+              "shortName": "Social",
+              "size": 6770.886571336248
+            },
+            {
+              "id": 2,
+              "name": "Robotics",
+              "shortName": "Robotics",
+              "size": 6134.036706944488
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "name": "Rest of ICT Spending",
+          "shortName": "Rest of ICT Spending",
+          "size": 62419.15124201927
+        },
+        {
+          "id": 2,
+          "name": "2nd Platform",
+          "shortName": "2nd Platform",
+          "size": 33773.11474654304
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Other",
+      "shortName": "Other",
+      "children": [
+        {
+          "id": 4,
+          "name": "3rd Platform",
+          "shortName": "3rd Platform",
+          "children": [
+            {
+              "id": 4,
+              "name": "3D Print",
+              "shortName": "3D Print",
+              "size": 7797.799052200728
+            },
+            {
+              "id": 4,
+              "name": "IoT",
+              "shortName": "IoT",
+              "size": 487211.0614347107
+            },
+            {
+              "id": 4,
+              "name": "Robotics",
+              "shortName": "Robotics",
+              "size": 46793.16587308253
+            },
+            {
+              "id": 4,
+              "name": "AR/VR",
+              "shortName": "AR/VR",
+              "size": 8209.978383671129
+            },
+            {
+              "id": 4,
+              "name": "Security",
+              "shortName": "Security",
+              "size": 10786.335868772845
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Software",
+      "shortName": "Software",
+      "children": [
+        {
+          "id": 5,
+          "name": "3rd Platform",
+          "shortName": "3rd Platform",
+          "children": [
+            {
+              "id": 5,
+              "name": "Cloud",
+              "shortName": "Cloud",
+              "size": 66364.93842803332
+            },
+            {
+              "id": 5,
+              "name": "Mobility",
+              "shortName": "Mobility",
+              "size": 7015.041238734646
+            },
+            {
+              "id": 5,
+              "name": "Social",
+              "shortName": "Social",
+              "size": 19577.924100751745
+            },
+            {
+              "id": 5,
+              "name": "Cognitive",
+              "shortName": "Cognitive",
+              "size": 4790.072552515217
+            },
+            {
+              "id": 5,
+              "name": "Security",
+              "shortName": "Security",
+              "size": 19976.836943444607
+            },
+            {
+              "id": 5,
+              "name": "IoT",
+              "shortName": "IoT",
+              "size": 16802.35450180734
+            },
+            {
+              "id": 5,
+              "name": "Robotics",
+              "shortName": "Robotics",
+              "size": 3221.24195255953
+            },
+            {
+              "id": 5,
+              "name": "3D Print",
+              "shortName": "3D Print",
+              "size": 525.8666557713677
+            },
+            {
+              "id": 5,
+              "name": "Big Data",
+              "shortName": "Big Data",
+              "size": 36144.89764106036
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "name": "2nd Platform",
+          "shortName": "2nd Platform",
+          "size": 177986.60903430032
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Devices",
+      "shortName": "Devices",
+      "children": [
+        {
+          "id": 6,
+          "name": "2nd Platform",
+          "shortName": "2nd Platform",
+          "size": 86151.84046928809
+        },
+        {
+          "id": 6,
+          "name": "3rd Platform",
+          "shortName": "3rd Platform",
+          "children": [
+            {
+              "id": 6,
+              "name": "Mobility",
+              "shortName": "Mobility",
+              "size": 418673.2775475119
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
