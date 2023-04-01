@@ -14,10 +14,11 @@
           >
           <el-col :span="4"
             ><div class="grid-content bg-purple">
-              <p>System name</p>
+              <p>Daily carbon netutrality</p>
             </div></el-col
           >
           <el-col :span="18"
+          border
             ><div class="grid-content bg-purple">
               <el-menu class="el-menu-nav" 
               mode="horizontal"
@@ -51,35 +52,12 @@
       <el-container>
         <!-- main -->
         <el-main>
-          <el-carousel :interval="3000" type="card" height="400px">
-            <el-carousel-item v-for="item in 4" :key="item">
-              <h3 class="medium">{{ item }}</h3>
-            </el-carousel-item>
-          </el-carousel>
-          <!-- main function -->
-          <el-row class="function-row">
-            <el-button type="primary" round class="function1-button">
-              <div class="function1-button-content">
-                I am function1 but you can see i am very long, you can even put
-                picture or something in me if you want.
-              </div>
-            </el-button>
-            <el-button type="success" round class="function2-button">
-              <div class="function2-button-content">
-                I am function1 but you can see i am very long, you can even put
-                picture or something in me if you want.
-              </div>
-            </el-button>
-            <el-button type="danger" round class="function3-button">
-              <div class="function3-button-content">
-                I am function1 but you can see i am very long, you can even put
-                picture or something in me if you want.
-              </div>
-            </el-button>
-          </el-row>
+          <router-view></router-view>
         </el-main>
         <!-- footer -->
-        <el-footer>Footer something not important like copyright</el-footer>
+        <el-footer><i class="el-icon-loading"></i>Footer something not important like copyright
+          <a href="/test.html">here</a>
+        </el-footer>
       </el-container>
     </el-container>
 </template>
@@ -152,5 +130,14 @@ export default {};
 }
 .el-footer{
   height: 10%;
+  background-color: #b7d07a;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.el-icon-loading{
+  font-size: 18px;
+  color: red;
 }
 </style>
