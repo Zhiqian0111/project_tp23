@@ -7,12 +7,13 @@
       <el-header>
         <!-- logo -->
         <el-row :gutter="20">
-          <el-col :span="2"
+          <el-col :span="3"
             ><div class="grid-content bg-purple">
-              <p class="logo">logo</p>
+
+              <img src="../assets/logo.jpg" alt="" class="logo" @click="gotoMain">
             </div></el-col
           >
-          <el-col :span="4"
+          <el-col :span="3"
             ><div class="grid-content bg-purple">
               <p>Daily carbon netutrality</p>
             </div></el-col
@@ -63,17 +64,26 @@
 </template>
 
 <script>
-export default {};
+export default {
+  methods:{
+    gotoMain(){
+      this.$router.push('/main');
+    }
+  }
+};
 </script>
 
 <style>
+
 .home-container {
   height: 100%;
 }
 .el-header .logo {
-  width: 40px;
-  height: 40px;
+  width: 75px;
+  height: 60px;
   /* background-color: #b7d07a; */
+  margin-left: 60px;
+  cursor: pointer;
 }
 .el-submenu{
   margin: 0;

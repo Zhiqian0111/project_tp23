@@ -1,17 +1,47 @@
 <template>
   <div class="content">
-    <div class="headerPic">put a gif or something</div>
+    <div class="headerPic">
+      <img src="../assets/car.gif" alt="" class="car_gif">
+      <h2 class="carHeader">Try our green calculate for your vehicle</h2>
+      <!-- <div style="clear: both;"></div> -->
+    </div>
     <el-row :gutter="0">
       <el-col :span="16"
         ><div class="grid-content bg-purple">
           <div class="emission-content">
-            put text description and picture here
+            <br><br>
+            <h3>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Three main harmful effects which are caused by carbon emissions per gram: 
+            </h3>  
+            <p class="carText">
+              In terms of the aspect of <span class="bold">climate change</span>, the United Nations stated that an increase of 1
+              gram of carbon emissions can cause a global average temperature rise of about <span class="bold">0.00005</span>°C
+              due to greenhouse gas emissions, also leading to worsening climate change.
+            </p>    
+            <p class="carText">
+              For the aspect of <span class="bold">Health Risks</span>: Some studies proposed that the impact of each gram of
+              carbon emissions on human health including the release of carcinogens, air pollution, water
+              pollution and other common hazards. The number of premature deaths due to air pollution is
+              estimated to be as high as several million per year.
+            </p>
+            <p class="carText">
+              According to the aspect of <span class="bold">Ecological Imbalance</span>: Each gram of carbon emissions places a
+              negative impact on the ecosystem, such as disrupting the balance of forest ecosystems,
+              ocean acidification etc…
+            </p> 
+            <p class="carText">
+              Reducing carbon emissions, adopting a low-carbon and environmentally friendly
+              lifestyle and promoting the substantial environment are crucial.
+
+            </p>                                                                                                       
           </div>
         </div></el-col
       >
       <el-col :span="8"
         ><div class="grid-content bg-purple">
           <el-card>
+            <el-tag effect="dark" type="success" class="cal_tag"> Carbon dioxide calculator
+</el-tag>
             <el-form
               :model="ruleForm"
               :rules="rules"
@@ -59,6 +89,19 @@
             <div v-if="total !== null">
               Your driving raises the global temperature by
               <el-tag type="danger" effect="dark">{{ total }}</el-tag> ℃
+            </div>
+            <hr>
+            <div>
+              <p class="askText">
+                We are providing more data on vehicle carbon emissions.
+                Want to know?
+              </p>
+            </div>
+            <div>
+              <el-button type="success" round><a href="http://www.google.com">Click here!</a></el-button>
+            </div>
+            <div class="gif02Container">
+              <img src="../assets/carGIF02.gif" alt="" class="gif02">
             </div>
           </el-card>
         </div></el-col
@@ -135,7 +178,9 @@ export default {
       
     },
     calculateTotal() {
-      this.total = this.carbonData * this.ruleForm.distance * 0.00005;
+      let total = this.carbonData * this.ruleForm.distance * 0.00005;
+      total = total.toFixed(4)
+      this.total = total
     },
     submitForm(formName) {
         if(this.carBrand){
@@ -175,14 +220,21 @@ export default {
 }
 .headerPic {
   height: 90px;
-  background-color: green;
+  background-color: #8ecd94;
+  overflow: hidden;
+  /* text-align: center; */
+
 }
 .emission-content {
-  background-color: orange;
+  /* background-color: orange; */
   height: 600px;
+  background-image: url(../assets/car_bg.png);
+  background-size: auto 100%;
+  color: white;
+  overflow: hidden;
 }
 .el-row {
-  background-color: pink;
+  /* background-color: pink; */
   padding: 0 !important;
 }
 .el-input,
@@ -190,9 +242,53 @@ export default {
   width: 200px;
 }
 .el-card {
-  /* padding: 30px; */
+  height: 600px;
 }
-.text {
+.carText {
   margin: 20px;
 }
+.car_gif{
+  width: 120px;
+   float: left;
+   margin-right: 20%;
+}
+
+.bold{
+  font-weight: bold;
+  color: blanchedalmond;
+}
+.cal_tag{
+  margin-bottom: 8%;
+  margin-left: 20%;
+  font-size: 18px;
+  text-align: center;
+}
+.carHeader{
+  color: white;
+  transition: transform 0.5s ease;
+}
+.carHeader:hover {
+    transform: scale(1.1); /* 缩放文字为原来的1.1倍 */
+    transition: transform 0.5s ease; /* 设置变化过渡效果，0.5s表示过渡时间，ease表示缓动函数 */
+}
+.askText{
+  color: #7ec9d3;
+  
+}
+.gif02{
+  width: 195px;
+  display: block;
+  margin-left: 100px;
+}
+/* .gif02Container{
+  padding-right: 50px;
+} */
+hr {
+  border-color: green;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+
 </style>
