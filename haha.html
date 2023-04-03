@@ -21,7 +21,7 @@
   </head>
 
   <body>
-    <h2>Gasoline Car Carbon CO2 Emission Facts</h3>
+    <h2>Gasoline Car Carbon CO2 Emission Facts</h2>
     <div class="selectBox" id="vuejscrudapp">
       <select id="updateid">
         <option value="">Select brand</option>
@@ -32,12 +32,27 @@
 
       <div
         class="chart-container"
-        style="position: relative; height: 40vh; width: 80vw"
+        style="position: relative; 
+        height: 40vh; width: 80vw"
       >
         <canvas id="myChart" chart-click="ctrl.onClick"></canvas>
       </div>
-
-      <div id="chartdiv"></div>
+      <div class="text-area">
+      <h2>Low-carbon transport advice</h2>
+       <p>1.Walk or ride a bike. For short trips, walking or biking is the most environmentally friendly and healthy option.</p>
+       <p>2.Use public transportation. Choosing public transportation such as buses, trains, and subways can reduce carbon emissions from driving alone.</p>
+       <p>3.Carpool or use bike-sharing. Carpooling with friends or colleagues, or renting bike-sharing services can reduce personal carbon emissions.</p>
+       <p>4.Drive low-emission vehicles. Choose low-emission or zero-emission vehicles such as hybrid, electric, or hydrogen fuel cell vehicles.</p>
+      </div>
+      <div class="pieChart">
+        <!-- <label for="">Pie chart</label> -->
+        <h2>Gasoline Car Carbon CO2 Emission Pie Chart</h2>
+        <div id="chartdiv"></div>
+      </div>
+      
+      
+      
+      
 
       <div id='myDiv'><!-- Plotly chart will be drawn inside this DIV --></div>
 
@@ -95,7 +110,7 @@
         methods: {
           getRecords() {
             axios({
-              url: "http://localhost:5000/mysql1",
+              url: "http://127.0.0.1:5000/mysql1",
               method: "get",
             })
               .then((res) => {
@@ -179,7 +194,7 @@
                   this.message = box.value;
 
                   axios({
-                    url: `http://localhost:5000/search?message=${this.message}`,
+                    url: `http://127.0.0.1:5000/search?message=${this.message}`,
                     method: "get",
                   }).then((res) => {
                     this.records1 = res.data;
