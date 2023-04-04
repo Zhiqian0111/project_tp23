@@ -10,12 +10,12 @@
           <el-col :span="3"
             ><div class="grid-content bg-purple">
 
-              <img src="../assets/logo.jpg" alt="" class="logo" @click="gotoMain">
+              <img src="../assets/logo.jpg" alt="" class="logo">
             </div></el-col
           >
           <el-col :span="3"
             ><div class="grid-content bg-purple">
-              <p>Daily carbon netutrality</p>
+              <p class="projectName">Daily Carbon Netutrality</p>
             </div></el-col
           >
           <el-col :span="18"
@@ -25,23 +25,13 @@
               mode="horizontal"
               background-color="#b7d07a"
               text-color="#fff"
+              active-text-color="white"
               router
               >
-                <el-menu-item :index="'/'+'test'">Option1</el-menu-item>
-                <el-submenu index="2">
-                  <template slot="title">Option2</template>
-                  <el-menu-item index="2-1">op1</el-menu-item>
-                  <el-menu-item index="2-2">op2</el-menu-item>
-                  <el-menu-item index="2-3">op3</el-menu-item>
-                  <el-submenu index="2-4">
-                    <template slot="title">op4</template>
-                    <el-menu-item index="2-4-1">op1</el-menu-item>
-                    <el-menu-item index="2-4-2">op2</el-menu-item>
-                    <el-menu-item index="2-4-3">op3</el-menu-item>
-                  </el-submenu>
-                </el-submenu>
-                <el-menu-item index="3">Option3</el-menu-item>
-                <el-menu-item index="4">Option4</el-menu-item>
+                <el-menu-item :index="'/'+'main'"><i class="el-icon-loading"></i>Homepage</el-menu-item>
+                <el-menu-item :index="'/'+'daily'">Daily life</el-menu-item>
+                <el-menu-item index="3">Damage</el-menu-item>
+                <el-menu-item index="4">About Us</el-menu-item>
               </el-menu>
             </div></el-col
           >
@@ -56,8 +46,8 @@
           <router-view></router-view>
         </el-main>
         <!-- footer -->
-        <el-footer><i class="el-icon-loading"></i>Footer something not important like copyright
-          <a href="/test.html">here</a>
+        <el-footer><i class="el-icon-loading"></i>Daily carbon netutrality
+          <!-- <a href="/test.html">here</a> -->
         </el-footer>
       </el-container>
     </el-container>
@@ -148,6 +138,9 @@ export default {
 }
 .el-icon-loading{
   font-size: 18px;
-  color: red;
+  color: red !important;
+}
+.projectName{
+  color: #fff;
 }
 </style>

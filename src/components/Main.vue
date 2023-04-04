@@ -16,8 +16,8 @@
         <div>
           Carbon dioxide has had a significant impact on the Earth's climate. The greenhouse effect causes temperatures to rise, which in turn leads to rising sea levels. At the same time, the likelihood of extreme weather events is also increasing.
         </div>
-
       </el-collapse-item>
+      <!-- <img src="../assets/con01.jpg" alt="" class="con01_pic"> -->
       <el-collapse-item>
         <template slot="title">
           &nbsp;<i class="el-icon-circle-plus-outline"></i>&nbsp;Conventional cars overly dependent on fossil fuels
@@ -26,6 +26,7 @@
           Over-reliance on fossil fuels as the primary driver of traditional automobiles inevitably leads to increased carbon dioxide emissions. This is because these fossil fuels exhaust carbon dioxide when burned in the vehicle's engine, exacerbating greenhouse gas emissions and affecting climate change.
         </div>
       </el-collapse-item>
+      <!-- <img src="../assets/con02.jpg" alt="" class="con01_pic"> -->
       <el-collapse-item>
         <template slot="title">
           &nbsp;<i class="el-icon-circle-plus-outline"></i>&nbsp;Encourage VIC residents using clean energy
@@ -33,6 +34,7 @@
         <div>In order to better address the root causes of the problem, it is strongly encouraged for residents in Weizhou to prioritise the use of clean energy as their preferred mode of transportation, including electric vehicles, public transportation etc.</div>
       
       </el-collapse-item>
+      <!-- <img src="../assets/con03.jpg" alt="" class="con01_pic"> -->
       <el-collapse-item>
         <template slot="title">
           &nbsp;<i class="el-icon-circle-plus-outline"></i>&nbsp;Advocate low-carbon life and prompt sustainable development in VIC
@@ -41,6 +43,7 @@
           VIC Residents should be encouraged to adopt a low-carbon lifestyle, which can help reduce carbon dioxide emissions by using more renewable energy and recyclable everyday products, effectively reducing personal carbon footprint.
         </div>
       </el-collapse-item>
+      <!-- <img src="../assets/con04.jpg" alt="" class="con01_pic"> -->
     </el-collapse>
     <!-- main function -->
     <el-row class="function-row">
@@ -91,6 +94,11 @@ export default {
   /* background-color: orange; */
   height: 100%;
 }
+.con01_pic{
+  width: 800px;
+  height: 220px;
+  margin: 0 15%;
+}
 .el-carousel__item h3 {
   color: #475669;
   font-size: 14px;
@@ -131,18 +139,21 @@ export default {
   background-size: 100% auto;
 }
 .el-collapse{
-  width: 80%;
+  width: 1200px;
   margin: 0 auto;
+  
 }
 .el-collapse-item__header{
   background-color:  #b7d07a !important;
   color: white !important;
+  font-size: 20px !important;
 }
 .el-collapse-item__content {
-  color:  #b9e8c0; /* 改变折叠状态的背景颜色 */
+  color:  #b9e8c0; 
+  font-size: 18px !important;
 }
 .el-collapse-item__wrap.is-active {
-  background-color: #e0e0e0; /* 改变展开状态的背景颜色 */
+  background-color: #e0e0e0; 
 }
 
 /* .el-carousel__item:nth-child(2n + 1) {

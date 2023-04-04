@@ -5,6 +5,11 @@ import Home from '../components/Home.vue'
 import Main from '../components/Main.vue'
 import CarEmission from '../components/CarEmission.vue'
 import Search from '../components/Search.vue'
+import Daily from '../components/Daily.vue'
+import Clothing from '../components/Daily/Clothing.vue'
+import Food from '../components/Daily/Food.vue'
+import Housing from '../components/Daily/Housing.vue'
+import Travel from '../components/Daily/Travel.vue'
 
 Vue.use(Router)
 const router = new Router({
@@ -15,7 +20,15 @@ const router = new Router({
     children:[
       {path:'/main',component:Main},
       {path:'/carEmission',component:CarEmission},
-      {path:'/search',component:Search}
+      {path:'/search',component:Search},
+      {path:'/daily',component:Daily,redirect: '/clothing',
+      children:[
+        {path:'/clothing',component:Clothing},
+        {path:'/food',component:Food},
+        {path:'/housing',component:Housing},
+        {path:'/travel',component:Travel},
+      ]
+    }
     ]
   },
     
