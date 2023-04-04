@@ -78,7 +78,7 @@ export default {};
   margin-left: 55px;
 }
 .banner_pic{
-    width: 1506px;
+    width: 100%;
     height: 110px;
 }
 </style>

@@ -30,8 +30,8 @@
               >
                 <el-menu-item :index="'/'+'main'"><i class="el-icon-loading"></i>Homepage</el-menu-item>
                 <el-menu-item :index="'/'+'daily'">Daily life</el-menu-item>
-                <el-menu-item index="3">Damage</el-menu-item>
-                <el-menu-item index="4">About Us</el-menu-item>
+                <el-menu-item>Damage</el-menu-item>
+                <el-menu-item>About Us</el-menu-item>
               </el-menu>
             </div></el-col
           >

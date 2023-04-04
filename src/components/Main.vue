@@ -144,12 +144,13 @@ export default {
   
 }
 .el-collapse-item__header{
-  background-color:  #b7d07a !important;
-  color: white !important;
+  background-color:  white !important;
+  color: rgb(17, 1, 1) !important;
   font-size: 20px !important;
 }
 .el-collapse-item__content {
-  color:  #b9e8c0; 
+  color:  #a3e5ad;
+  background-color: #e8f0e3; 
   font-size: 18px !important;
 }
 .el-collapse-item__wrap.is-active {
