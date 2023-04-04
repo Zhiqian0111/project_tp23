@@ -23,7 +23,7 @@
         <el-input
           v-model="search"
           size="mini"
-          placeholder="输入关键字搜索"/>
+          placeholder="Input key word"/>
       </template>
       <template slot-scope="scope">
         <el-button
@@ -47,29 +47,29 @@
       return {
         tableData: [{
           date: '2016-05-02',
-          name: '王小虎',
+          name: 'Ross',
           address: '上海市普陀区金沙江路 1518 弄'
         }, {
           date: '2016-05-04',
-          name: '王小虎',
+          name: 'Julie',
           address: '上海市普陀区金沙江路 1517 弄'
         }, {
           date: '2016-05-01',
-          name: '王小虎',
+          name: 'Gary',
           address: '上海市普陀区金沙江路 1519 弄'
         }, {
           date: '2016-05-03',
-          name: '王小虎',
+          name: 'Lily',
           address: '上海市普陀区金沙江路 1516 弄'
         },
         {
           date: '2016-05-03',
-          name: '李小虎',
+          name: 'Barbara',
           address: '上海市普陀区金沙江路 1516 弄'
         },
         {
           date: '2016-05-03',
-          name: '李小名',
+          name: 'Lee',
           address: '上海市普陀区金沙江路 1516 弄'
         }],
         search: ''

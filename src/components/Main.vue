@@ -11,45 +11,34 @@
     <el-collapse>
       <el-collapse-item>
         <template slot="title">
-          一致性 Consistency &nbsp;<i class="el-icon-circle-plus-outline"></i>
+          &nbsp;<i class="el-icon-circle-plus-outline"></i>&nbsp; Carbon dioxide emissions mainly driveing the climate change in earth.
         </template>
         <div>
-          与现实生活一致：与现实生活的流程、逻辑保持一致，遵循用户习惯的语言和概念；
+          Carbon dioxide has had a significant impact on the Earth's climate. The greenhouse effect causes temperatures to rise, which in turn leads to rising sea levels. At the same time, the likelihood of extreme weather events is also increasing.
         </div>
+
+      </el-collapse-item>
+      <el-collapse-item>
+        <template slot="title">
+          &nbsp;<i class="el-icon-circle-plus-outline"></i>&nbsp;Conventional cars overly dependent on fossil fuels
+        </template>
         <div>
-          在界面中一致：所有的元素和结构需保持一致，比如：设计样式、图标和文本、元素的位置等。
+          Over-reliance on fossil fuels as the primary driver of traditional automobiles inevitably leads to increased carbon dioxide emissions. This is because these fossil fuels exhaust carbon dioxide when burned in the vehicle's engine, exacerbating greenhouse gas emissions and affecting climate change.
         </div>
       </el-collapse-item>
       <el-collapse-item>
         <template slot="title">
-          一致性 Consistency &nbsp;<i class="el-icon-circle-plus-outline"></i>
+          &nbsp;<i class="el-icon-circle-plus-outline"></i>&nbsp;Encourage VIC residents using clean energy
         </template>
-        <div>
-          控制反馈：通过界面样式和交互动效让用户可以清晰的感知自己的操作；
-        </div>
-        <div>页面反馈：操作后，通过页面元素的变化清晰地展现当前状态。</div>
+        <div>In order to better address the root causes of the problem, it is strongly encouraged for residents in Weizhou to prioritise the use of clean energy as their preferred mode of transportation, including electric vehicles, public transportation etc.</div>
+      
       </el-collapse-item>
       <el-collapse-item>
         <template slot="title">
-          一致性 Consistency &nbsp;<i class="el-icon-circle-plus-outline"></i>
-        </template>
-        <div>简化流程：设计简洁直观的操作流程；</div>
-        <div>
-          清晰明确：语言表达清晰且表意明确，让用户快速理解进而作出决策；
-        </div>
-        <div>
-          帮助用户识别：界面简单直白，让用户快速识别而非回忆，减少用户记忆负担。
-        </div>
-      </el-collapse-item>
-      <el-collapse-item>
-        <template slot="title">
-          一致性 Consistency &nbsp;<i class="el-icon-circle-plus-outline"></i>
+          &nbsp;<i class="el-icon-circle-plus-outline"></i>&nbsp;Advocate low-carbon life and prompt sustainable development in VIC
         </template>
         <div>
-          用户决策：根据场景可给予用户操作建议或安全提示，但不能代替用户进行决策；
-        </div>
-        <div>
-          结果可控：用户可以自由的进行操作，包括撤销、回退和终止当前操作等。
+          VIC Residents should be encouraged to adopt a low-carbon lifestyle, which can help reduce carbon dioxide emissions by using more renewable energy and recyclable everyday products, effectively reducing personal carbon footprint.
         </div>
       </el-collapse-item>
     </el-collapse>
@@ -70,8 +59,8 @@
       @click="goSearch"
       >
         <div class="function2-button-content">
-          I am function2 but you can see i am very long, you can even put
-          picture or something in me if you want.
+          <img src="../assets/function2.png" alt="" class="func2_img">
+          <p class="funcDesc">Carbon dioxide Search Function</p>
         </div>
       </el-button>
       <el-button type="danger" round class="function3-button">
@@ -184,5 +173,9 @@ export default {
 }
 .funcDesc {
   font-size: 20px;
+}
+.func2_img{
+  width: 250px;
+  height: 230px;
 }
 </style>
