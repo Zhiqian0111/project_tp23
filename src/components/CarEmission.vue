@@ -155,8 +155,11 @@ export default {
   methods: {
     async fetchBrands() {
       try {
-        const response = await this.$http.get("http://localhost:5000/brands");
-        this.brands = response.data;
+        const response = await this.$http.get("http://localhost:5000/mysql1");
+        console.log(response.data);
+        this.brands = JSON.parse(JSON.stringify(response.data)).map(car => car.Make);
+
+        console.log(this.brands);
       } catch (error) {
         console.log(error);
       }
@@ -166,9 +169,9 @@ export default {
         if(this.selectedBrand){
             try {
         const response = await this.$http.get(
-          `http://localhost:5000/carbon/${this.selectedBrand}`
+          `http://localhost:5000/carbon?message=${this.selectedBrand}`
         );
-        this.carbonData = response.data;
+        this.carbonData = JSON.parse(JSON.stringify(response.data)).map(car => car.CO2);
       } catch (error) {
         return this.$message.error("can't get emission");
       }
