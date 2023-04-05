@@ -34,7 +34,12 @@ export default {
 </script>
 
 <style>
+h4{
+  margin-left: 20%;
+}
 p{
     text-align: left;
+    /* width: 70%; */
+    margin-left: 20%;
 }
 </style>

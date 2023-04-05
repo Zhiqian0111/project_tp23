@@ -8,7 +8,7 @@
     <div class="intro">
         <el-row :gutter="20">
         <el-col :span="2"><div class="grid-content bg-purple">
-            <el-aside width="200px">
+            <el-aside width="165px">
           <el-menu default-active="1" class="el-menu-vertical-demo" router>
             <el-menu-item :index="'/' + 'clothing'">
               <i class="el-icon-s-custom"></i>
@@ -56,14 +56,17 @@ export default {};
 }
 .el-menu-item {
     text-align: left;
+    width: 160px;
 }
 
 .el-aside {
-  background-color: #d3dce6;
+  /* background-color: #d3dce6; */
   color: #333;
   text-align: center;
   line-height: 200px;
   height: 227px;
+  overflow: hidden;
+
 }
 .el-menu{
     height: 300px;
@@ -71,7 +74,7 @@ export default {};
 }
 
 .el-main {
-  background-color: #e9eef3;
+  /* background-color: #e9eef3; */
   color: #333;
   text-align: center;
   height: 400px;

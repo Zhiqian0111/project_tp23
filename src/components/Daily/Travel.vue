@@ -2,7 +2,7 @@
       <div>
     <el-row :gutter="20">
   <el-col :span="10"><div class="grid-content bg-purple">
-    <img src="../../assets/travel.jpg" alt="">
+    <img src="../../assets/travel.jpg" alt="" class="introPic">
   </div></el-col>
   <el-col :span="12"><div class="grid-content bg-purple">
     <h4>
@@ -32,5 +32,8 @@ export default {
 </script>
 
 <style>
+.introPic{
+  /* width: 200px; */
+}
 
 </style>
