@@ -155,7 +155,7 @@ export default {
   methods: {
     async fetchBrands() {
       try {
-        const response = await this.$http.get("http://localhost:5000/mysql1");
+        const response = await this.$http.get("https://backendtp23.onrender.com/mysql1");
         console.log(response.data);
         this.brands = JSON.parse(JSON.stringify(response.data)).map(car => car.Make);
 
@@ -169,7 +169,7 @@ export default {
         if(this.selectedBrand){
             try {
         const response = await this.$http.get(
-          `http://localhost:5000/carbon?message=${this.selectedBrand}`
+          `https://backendtp23.onrender.com/carbon?message=${this.selectedBrand}`
         );
         this.carbonData = JSON.parse(JSON.stringify(response.data)).map(car => car.CO2);
       } catch (error) {
@@ -271,8 +271,8 @@ export default {
   transition: transform 0.5s ease;
 }
 .carHeader:hover {
-    transform: scale(1.1); /* 缩放文字为原来的1.1倍 */
-    transition: transform 0.5s ease; /* 设置变化过渡效果，0.5s表示过渡时间，ease表示缓动函数 */
+    transform: scale(1.1); 
+    transition: transform 0.5s ease; 
 }
 .askText{
   color: #7ec9d3;
@@ -283,9 +283,7 @@ export default {
   display: block;
   margin-left: 100px;
 }
-/* .gif02Container{
-  padding-right: 50px;
-} */
+
 hr {
   border-color: green;
 }
