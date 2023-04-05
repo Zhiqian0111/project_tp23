@@ -22,7 +22,7 @@
       prop="date">
     </el-table-column> -->
     <el-table-column
-      label="CO2"
+      label="CO2(g/km)"
       prop="CO2">
     </el-table-column>
     <el-table-column
