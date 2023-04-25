@@ -16,35 +16,23 @@
         <el-col :span="3"
           ><div class="grid-content bg-purple">
             <p class="projectName">Daily Carbon Netutrality</p>
-          </div></el-col
-        >
+          </div></el-col>
         <el-col :span="18"
           ><div class="grid-content bg-purple">
             <el-menu class="el-menu-nav"
             mode="horizontal"
             text-color="#fff"
-                     background-color="transparent"
+            background-color="transparent"
             active-text-color="white"
             router
             >
               <el-menu-item :index="'/'+'main'"><i class="el-icon-loading"></i>Homepage</el-menu-item>
-<!--                <el-submenu  :index="'/'+'daily'">-->
-<!--                  <template slot="title">Daily life</template>-->
-<!--                  <el-menu-item :index="'/'+'daily'">Daily life</el-menu-item>-->
-<!--                  <el-menu-item >选项2</el-menu-item>-->
-<!--                  <el-menu-item >选项3</el-menu-item>-->
-<!--                </el-submenu>-->
-<!--                <el-menu-item>Damage</el-menu-item>-->
-              <!-- <el-submenu  :index="'/'+'carEmission'"> -->
-                <!-- <template slot="title">car emission</template> -->
                 <el-menu-item :index="'/'+'carEmission'">Emission Caculator</el-menu-item>
                 <el-menu-item :index="'/'+'search'">Emission Search</el-menu-item>
                 <el-menu-item ><a href="haha.html">Car Emission Facts</a></el-menu-item>
-              <!-- </el-submenu> -->
-              <!-- <el-menu-item>About Us</el-menu-item> -->
+                <el-menu-item :index="'/'+'quiz'">Emission quiz</el-menu-item>
             </el-menu>
-          </div></el-col
-        >
+          </div></el-col>
       </el-row>
 
       <!-- navigation -->

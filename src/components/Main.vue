@@ -41,9 +41,10 @@ export default {
 
 <style>
 .mainStyle{
+  box-sizing: content-box;
   background: url("../assets/homg-bg.jpg")no-repeat;
   background-size: cover;
-  min-height: 100vh;
+  min-height: 80vh;
   min-width: 100%;
   padding: 0 !important;
   margin: 0 !important;
