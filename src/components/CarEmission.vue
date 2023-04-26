@@ -1,5 +1,9 @@
 <template>
   <div class="content">
+    <el-breadcrumb separator="/">
+      <el-breadcrumb-item :to="{ path: '/' }">Homepage</el-breadcrumb-item>
+      <el-breadcrumb-item>Emission calculator</el-breadcrumb-item>
+    </el-breadcrumb>
     <div class="headerPic">
       <img src="../assets/car.gif" alt="" class="car_gif">
       <h2 class="carHeader">Try our green calculate for your vehicle</h2>
@@ -77,11 +81,11 @@
 
               <div class="text item"></div>
               <div class="text item">
-                <el-button type="success" round @click="submitForm('ruleForm')"
+                <el-button type="success" round @click="submitForm('ruleForm')" class="checkButton"
                 
                   >check</el-button
                 >
-                <el-button type="success" round @click="resetForm('ruleForm')">reset</el-button>
+                <el-button type="success" round @click="resetForm('ruleForm')" class="resetButton">reset</el-button>
               </div>
             </el-form>
 
@@ -219,6 +223,9 @@ export default {
   width: 73%;
   margin: 0 auto;
 }
+.el-breadcrumb{
+  margin: 1% auto;
+}
 .headerPic {
   height: 90px;
   background-color: #8ecd94;
@@ -285,6 +292,10 @@ hr {
 a{
   text-decoration: none;
   color: white;
+}
+
+.resetButton,.checkButton{
+  width: 80px;
 }
 
 </style>

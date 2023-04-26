@@ -27,7 +27,7 @@
             router
             >
               <el-menu-item :index="'/'+'main'"><i class="el-icon-loading"></i>Homepage</el-menu-item>
-                <el-menu-item :index="'/'+'carEmission'">Emission Caculator</el-menu-item>
+                <el-menu-item :index="'/'+'carEmission'">Emission calculator</el-menu-item>
                 <el-menu-item :index="'/'+'search'">Emission Search</el-menu-item>
                 <el-menu-item ><a href="haha.html">Car Emission Facts</a></el-menu-item>
                 <el-menu-item :index="'/'+'quiz'">Emission quiz</el-menu-item>

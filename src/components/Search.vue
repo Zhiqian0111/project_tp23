@@ -1,5 +1,10 @@
 <template>
+
   <el-card class="searchContent">
+    <el-breadcrumb separator="/">
+      <el-breadcrumb-item :to="{ path: '/' }">Homepage</el-breadcrumb-item>
+      <el-breadcrumb-item>Emission Search</el-breadcrumb-item>
+    </el-breadcrumb>
     <div class="text item searchHeader">
         <img src="../assets/car.gif" alt="" class="car_gif">
       <h2 class="carHeader">Use our Search Function to Know Your Car !</h2>
@@ -17,10 +22,6 @@
       label="Model"
       prop="Model">
     </el-table-column>
-    <!-- <el-table-column
-      label="Vehicle Class"
-      prop="date">
-    </el-table-column> -->
     <el-table-column
       label="CO2(g/km)"
       prop="CO2">
@@ -81,7 +82,10 @@
 
 <style>
 .searchContent{
-    background-color: #d2d1ed !important;
+    /* background-color: #d2d1ed !important; */
+}
+.el-breadcrumb{
+  margin: 1% auto;
 }
 .searchHeader {
   height: 90px;
