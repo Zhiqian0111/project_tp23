@@ -348,6 +348,11 @@ export default {
   font-size: 1em;
   vertical-align: middle;
   font-weight: normal;
+  
+}
+.picContent p:hover{
+  color: #666 !important;
+  cursor: pointer !important; 
 }
 .textContent h3 {
   margin-top: 10px;
