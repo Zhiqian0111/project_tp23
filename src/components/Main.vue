@@ -2,28 +2,101 @@
   <div class="mainStyle">
     <el-backtop></el-backtop>
 
-    <div class="headerText">
-      <h1>Daily Carbon Netutrality</h1>
-      <h3>Protect Our Earth, Reduce Carbon Pollution!</h3>
+    <div class="image-container">
+      <img src="../assets/backgroundGIF.gif" alt="" />
+      <div class="text-container">
+        <h1>Focus on carbon emissions from vehicles</h1>
+        <h3>Protect Our Earth, Reduce Carbon Pollution</h3>
+      </div>
     </div>
-    <div class="buttonArea">
-    <button class="function1-button" style=" position: relative;overflow: hidden">
-      <p>Know the temperature rise you're causing</p>
-         <div class="y_pos">
-          <button class="button_inner" @click="goCarEmission"><i class="el-icon-share"></i>emission calculator</button>
-         </div>
-    </button>
-    <button class="function1-button" style=" position: relative;overflow: hidden">
-      <p>know the Emission your car made</p>
-         <div class="y_pos">
-          <button class="button_inner" @click="goSearch"><i class="el-icon-share"></i>emission Search</button>
-         </div>
-    </button>
+    <div class="InfoArea">
+      <h2>The shocking reality</h2>
+      <h3 class="shockingReality">
+        Human activities, such as burning fossil fuels, industrial production
+        and transportation, lead to carbon emissions that contribute to climate
+        change and global warming, posing a major threat to the environment. Now
+        something is happening......
+      </h3>
+
+      <el-row :gutter="5">
+        <img src="../assets/harmHomePage.jpg" alt="" class="harmHomePage" />
+      </el-row>
+      <router-link to="/trend" exact>
+        <el-button type="info" class="trend">Emission trend</el-button>
+      </router-link>
+      <el-button type="info" class="trend">Emission damage</el-button>
+      <h2>Carbon emissions & vehicles</h2>
+      <el-row :gutter="5">
+        <el-col :span="12"
+          ><div class="grid-content bg-purple">
+            <img src="../assets/carHome.jpg" alt="" /></div
+        ></el-col>
+        <el-col :span="12"
+          ><div class="grid-content bg-purple-light">
+            <p>
+              <strong>Vehicles</strong> are an essential means of transportation
+              in our daily lives. However, the combustion of fuels in vehicles
+              releases greenhouse gases such as carbon dioxide, which accumulate
+              in the atmosphere and contribute to global climate change. Vehicle
+              emissions have long been associated with a wide range of negative
+              impacts on human health and the environment, including air
+              pollution, climate change, acid rain, ozone depletion, and more.
+              Vehicle carbon emissions are also one of the main contributors to
+              the exacerbation of global warming and rising sea levels, which
+              have serious implications for both humans and the global
+              ecosystem.
+            </p>
+            <router-link to="/carEmission" exact>
+              <el-button type="info" class="carButton">Emission calculator</el-button>
+            </router-link>
+            <router-link to="/search" exact>
+              <el-button type="info" class="carButton">Emission Search</el-button>
+            </router-link>
+            <router-link to="/facts" exact>
+              <el-button type="info" class="carButton">Car Emission facts</el-button>
+            </router-link>
+          </div></el-col
+        >
+      </el-row>
+      <h2>Some Suggestion</h2>
+      <h3>Only by taking action can we protect our environment.</h3>
+      <el-row type="flex" class="SuggestionArea" justify="space-around">
+        <el-col :span="8"
+          ><div class="grid-content bg-purple">
+            <router-link to="/survey" exact>
+              <button class="image-button">
+                <img src="../assets/spring.jpg" alt="" />
+                <div class="button-overlay">
+                  <span class="button-text">Emission survey</span>
+                </div>
+              </button>
+            </router-link>
+          </div></el-col
+        >
+
+        <el-col :span="8"
+          ><div class="grid-content bg-purple">
+            <button class="image-button">
+              <img src="../assets/summer.jpeg" alt="" />
+              <div class="button-overlay">
+                <span class="button-text">low carbon life</span>
+              </div>
+            </button>
+          </div></el-col
+        >
+        <el-col :span="8"
+          ><div class="grid-content bg-purple">
+            <button class="image-button">
+              <img src="../assets/autumn.jpg" alt="" />
+              <div class="button-overlay">
+                <span class="button-text">low carbon transport</span>
+              </div>
+            </button>
+          </div></el-col
+        >
+      </el-row>
     </div>
-
-    </div> 
-
-
+  </div>
 </template>
 
 <script>
@@ -34,76 +107,171 @@ export default {
     },
     goSearch() {
       this.$router.push("/search");
-    }
+    },
   },
 };
 </script>
 
 <style>
-.mainStyle{
-  box-sizing: content-box;
-  background: url("../assets/homg-bg.jpg")no-repeat;
-  background-size: cover;
-  min-height: 80vh;
-  min-width: 100%;
-  padding: 0 !important;
-  margin: 0 !important;
-}
 .el-main {
   /* background-color: orange; */
   height: 100%;
   padding: 0 !important;
+  /* overflow: auto; */
+}
+.mainStyle {
+  height: 100%;
+  overflow: auto;
+}
+.InfoArea {
+  width: 70%;
+  margin: 8px auto;
+  text-align: center;
+}
+.InfoArea h2 {
+  font-family: Montserrat;
+  margin: 40px;
+}
+.InfoArea h3 {
+  font-family: Comic Sans MS;
+  /* margin: 40px; */
+}
+.InfoArea p {
+  font-family: Montserrat;
+  text-align: justify;
+  color: rgb(22, 22, 22);
+}
+.InfoArea img {
+  width: 500px;
+}
+.SuggestionArea .el-col {
+  width: 300px;
+}
+.SuggestionArea .el-col div {
+  height: 300px;
+  /* background-color: #e9e6e6; */
+}
+.carButton{
+margin-right: 15px !important;
 }
 
-.con01_pic {
-  width: 800px;
-  height: 220px;
-  margin: 0 15%;
+.image-container {
+  position: relative;
+  height: 600px;
+  overflow: hidden;
+}
+.InfoArea .harmHomePage {
+  width: 900px;
+}
+.shockingReality {
+  text-align: justify !important;
+}
+.trend {
+  /* display: inline-block !important; */
+  margin: 15px 30px !important;
 }
 
+.image-container::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.5;
+}
 
-.function-row {
+.text-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.text-container h1 {
+  color: white;
+  text-align: center;
+  font-size: 50px;
+}
+.text-container h3 {
+  color: white;
+  text-align: center;
+}
+
+.image-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.SuggestionArea {
   margin-top: 50px;
-  display: flex;
-  justify-content: space-between;
-  /* margin-bottom: 15px; */
 }
-
-.el-button {
-  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
-  width: 200px;
-  padding: 0;
+.image-button {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  border: none;
   margin: 0;
+  padding: 0;
+  cursor: pointer;
 }
 
-.el-button:hover {
-  transform: translateY(-5px);
+.image-button img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
-.function1-button-content,
-.function2-button-content,
-.function3-button-content {
-  width: 250px;
-  white-space: normal;
-  word-wrap: break-word;
-  height: 200px;
-
-}
-.headerText{
+.button-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  /* transition: opacity 0.1s ease-in-out; */
   display: flex;
   justify-content: center;
-  text-align: center;
-  color: white;
-  
+  align-items: center;
 }
-.headerText h1{
+
+.image-button:hover .button-overlay {
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.button-text {
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.headerText::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.3;
+}
+.headerText h1 {
   font-size: 80px;
   margin-right: -200px;
   margin-top: 7%;
 }
-.headerText h3{
+.headerText h3 {
   font-size: 30px;
   margin-top: 17%;
+}
+.SuggestionArea img {
+  width: 100%;
 }
 
 .y_pos {
@@ -118,24 +286,7 @@ export default {
   left: 0;
 }
 
-.func1_img {
-  width: 250px;
-  border: none;
-  height: 180px;
-
-  
-
-}
-
-.funcDesc {
-  font-size: 20px;
-}
-
-.func2_img {
-  width: 250px;
-  height: 230px;
-}
-.button_inner{
+.button_inner {
   color: white;
   background-color: transparent;
   border: none;
@@ -143,10 +294,10 @@ export default {
   margin: 40% auto;
   cursor: pointer;
 }
-.button_inner:hover{
+.button_inner:hover {
   color: #e0e0e0;
 }
-.function1-button{
+.function1-button {
   width: 220px;
   border: none;
   /* box-sizing: content-box; */
@@ -154,7 +305,7 @@ export default {
   height: 170px;
   /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
   margin-right: 80px;
-  background: rgba(20, 39, 54, .3);
+  background: rgba(20, 39, 54, 0.3);
   margin-top: -20%;
 }
 
@@ -163,26 +314,24 @@ export default {
   overflow: hidden;
 }
 
-
 .function1-button:hover .y_pos {
   top: 0;
-  transition: .5s;
-  
+  transition: 0.5s;
 }
 .function2-button:hover .y_pos {
   top: 0;
-  transition: .5s;
+  transition: 0.5s;
 }
 .function3-button:hover .y_pos {
   top: 0;
-  transition: .5s;
+  transition: 0.5s;
 }
-.function1-button p{
-color: white;
-margin-top: -30px;
-font-size: 18px;
+.function1-button p {
+  color: white;
+  margin-top: -30px;
+  font-size: 18px;
 }
-.buttonArea{
+.buttonArea {
   margin-left: 10%;
   margin-top: 10%;
 }

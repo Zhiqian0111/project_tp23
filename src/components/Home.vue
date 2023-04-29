@@ -6,35 +6,25 @@
     <!-- header -->
     <el-header>
       <!-- logo -->
-      <el-row :gutter="20">
-        <el-col :span="3"
-          ><div class="grid-content bg-purple">
-
-            <img src="../assets/y_logo.png" alt="" class="logo">
-          </div></el-col
-        >
-        <el-col :span="3"
-          ><div class="grid-content bg-purple">
-            <p class="projectName">Daily Carbon Netutrality</p>
-          </div></el-col>
-        <el-col :span="18"
+        <el-col :span="16"
           ><div class="grid-content bg-purple">
             <el-menu class="el-menu-nav"
             mode="horizontal"
             text-color="#fff"
             background-color="transparent"
-            active-text-color="white"
+            active-text-color="#dbcdb1"
+            :default-active="$router.currentRoute.path"
+           
             router
             >
-              <el-menu-item :index="'/'+'main'"><i class="el-icon-loading"></i>Homepage</el-menu-item>
-                <el-menu-item :index="'/'+'carEmission'">Emission calculator</el-menu-item>
-                <el-menu-item :index="'/'+'search'">Emission Search</el-menu-item>
-                <el-menu-item :index="'/'+'facts'">Car Emission Facts</el-menu-item>
-                <el-menu-item :index="'/'+'quiz'">Emission quiz</el-menu-item>
-                <el-menu-item :index="'/'+'trend'">Emission trend</el-menu-item>
+              <el-menu-item :index="'/'+'main'" class="homeClick">Homepage</el-menu-item>
+                <el-menu-item :index="'/'+'carEmission'" class="noLine">Emission calculator</el-menu-item>
+                <el-menu-item :index="'/'+'search'" class="noLine">Emission Search</el-menu-item>
+                <el-menu-item :index="'/'+'facts'" class="noLine">Car Emission Facts</el-menu-item>
+                <el-menu-item :index="'/'+'survey'" class="noLine">Emission survey</el-menu-item>
+                <el-menu-item :index="'/'+'trend'" class="noLine">Emission trend</el-menu-item>
             </el-menu>
           </div></el-col>
-      </el-row>
 
       <!-- navigation -->
     </el-header>
@@ -45,7 +35,7 @@
         <router-view></router-view>
       </el-main>
       <!-- footer -->
-      <el-footer><i class="el-icon-loading"></i>Daily carbon netutrality
+      <el-footer>Daily carbon netutrality
       </el-footer>
     </el-container>
   </el-container>
@@ -66,25 +56,57 @@ methods:{
 .home-container {
 height: 100%;
 }
-.el-header .logo {
-width: 75px;
-height: 60px;
-/* background-color: #b7d07a; */
-
-margin-left: 60px;
-cursor: pointer;
+.el-main{
+  overflow: auto;
 }
-.el-submenu{
-margin: 0;
-padding: 0 !important;
+.homeClick{
+  border: none !important;
+  /* color:#dbcdb1 !important; */
+  /* active-text-color:#fff; */
+}
+.noLine{
+  text-decoration: none;
+  border: none !important;
+  border: 3px solid;
+}
+.homeClick .is-active{
+  background-color: transparent;
+}
+.noLine .is-active{
+  background-color: transparent;
+  color: #dbcdb1 !important;
+}
+
+.homeClick:focus{
+  background-color: transparent !important;
+  color: #fff !important;
+}
+.el-menu-item:hover {
+  background-color: transparent !important;
+  color: #dbcdb1 !important;
+
+  
+}
+.noLine:focus {
+  border-bottom: none !important;
+  color: #dbcdb1 !important;
+}
+.el-menu-item{
+  font-size: 14px;
 }
 
 
 .el-header {
+/* position: absolute; */
+z-index: 1;
 width: 100%;
-background:rgba(20,39,54,0.3);
-background-color: #b7d07a;
+background-color: #252832;
+color: #fff;
 }
+.el-header .el-col{
+  margin-left: 30%;
+}
+
 .el-aside {
 background-color: #333744;
 height: 400px;
@@ -93,21 +115,7 @@ height: 400px;
 /* background-color: orange; */
 height: 100%;
 }
-.el-carousel__item h3 {
-color: #475669;
-font-size: 14px;
-opacity: 0.75;
-line-height: 200px;
-margin: 0;
-}
 
-.el-carousel__item:nth-child(2n) {
-background-color: #99a9bf;
-}
-
-.el-carousel__item:nth-child(2n + 1) {
-background-color: #d3dce6;
-}
 .function-row {
 margin-top: 50px;
 display: flex;
@@ -125,20 +133,15 @@ transform: translateY(-5px);
 .function3-button-content {
 width: 150px;
 white-space: normal;
-/* word-break: break-all; */
 word-wrap: break-word;
 }
 .el-footer{
 height: 10%;
-background-color: #b7d07a;
+background-color: #252832;
 color: #fff;
 display: flex;
 justify-content: center;
 align-items: center;
-}
-.el-icon-loading{
-font-size: 18px;
-color: red !important;
 }
 .projectName{
 color: #fff;

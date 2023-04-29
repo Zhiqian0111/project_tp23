@@ -20,12 +20,21 @@ const router = new Router({
       {path:'/main',component:Main},
       {path:'/carEmission',component:CarEmission},
       {path:'/search',component:Search},
-      {path:'/quiz',component:Quiz},
+      {path:'/survey',component:Quiz},
       {path:'/facts',component:Facts},
       {path:'/trend',component:Trend},
     ]
   },
     
-  ]
+  ],
+  scrollBehavior(to, from, savedPosition) {
+    if (to.hash) {
+      // 如果有锚点，返回锚点元素的坐标
+      return { selector: to.hash };
+    } else {
+      // 没有锚点，滚动到页面顶部
+      return { x: 0, y: 0 };
+    }
+  }
 })
 export default router

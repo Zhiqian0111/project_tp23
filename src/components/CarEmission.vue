@@ -219,6 +219,12 @@ export default {
 </script>
 
 <style scoped>
+.el-header {
+position: static !important;
+width: 100%;
+background-color: black !important;
+color: #fff;
+}
 .content {
   width: 73%;
   margin: 0 auto;
