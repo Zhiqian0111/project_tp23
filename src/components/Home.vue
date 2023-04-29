@@ -35,7 +35,7 @@
         <router-view></router-view>
       </el-main>
       <!-- footer -->
-      <el-footer>Daily carbon netutrality
+      <el-footer>@2023 CarbonCutterVic. &nbsp;&nbsp;Design by Tp23.
       </el-footer>
     </el-container>
   </el-container>
@@ -73,7 +73,7 @@ height: 100%;
   background-color: transparent;
 }
 .noLine .is-active{
-  background-color: transparent;
+  background-color: transparent !important;
   color: #dbcdb1 !important;
 }
 
