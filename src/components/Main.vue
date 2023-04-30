@@ -22,9 +22,9 @@
         <img src="../assets/harmHomePage.jpg" alt="" class="harmHomePage" />
       </el-row>
       <router-link to="/trend" exact>
-        <el-button type="info" class="trend">Emission trend</el-button>
+        <el-button type="info" class="trend">Emission Trend</el-button>
       </router-link>
-      <el-button type="info" class="trend">Emission damage</el-button>
+      <el-button type="info" class="trend">Emission Damage</el-button>
       <h2>Carbon emissions & vehicles</h2>
       <el-row :gutter="5">
         <el-col :span="12"
@@ -47,13 +47,13 @@
               ecosystem.
             </p>
             <router-link to="/carEmission" exact>
-              <el-button type="info" class="carButton">Emission calculator</el-button>
+              <el-button type="info" class="carButton">Emission Calculator</el-button>
             </router-link>
             <router-link to="/search" exact>
               <el-button type="info" class="carButton">Emission Search</el-button>
             </router-link>
             <router-link to="/facts" exact>
-              <el-button type="info" class="carButton">Car Emission facts</el-button>
+              <el-button type="info" class="carButton">Car Emission Facts</el-button>
             </router-link>
           </div></el-col
         >

@@ -6,8 +6,8 @@
       <el-breadcrumb-item>Emission Search</el-breadcrumb-item>
     </el-breadcrumb>
     <div class="text item searchHeader">
-        <img src="../assets/car.gif" alt="" class="car_gif">
-      <h2 class="carHeader">Use our Search Function to Know Your Car !</h2>
+        <!-- <img src="../assets/car.gif" alt="" class="car_gif"> -->
+      <h2 class="carHeader">Use our Search Function to Know Your Car</h2>
       <!-- <div style="clear: both;"></div> -->
     </div>
     <div class="text item tableContent">
@@ -64,7 +64,7 @@
       },
       async getTableData(){
         try {
-        const response = await this.$http.get("https://backendtp23.onrender.com/mysql");
+        const response = await this.$http.get("https://backendtp234.onrender.com/mysql");
         
         // this.tableData.Make= JSON.parse(JSON.stringify(response.data)).map(car => car.Make);
         this.tableData= JSON.parse(JSON.stringify(response.data)).map(car => car);
@@ -89,9 +89,10 @@
 }
 .searchHeader {
   height: 90px;
-  background-color: #8ecd94;
   overflow: hidden;
   /* text-align: center; */
+  background-image: url(../assets/surveyBG.jpg);
+  text-align: center;
 
 }
 .car_gif{

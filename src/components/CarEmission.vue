@@ -2,10 +2,10 @@
   <div class="content">
     <el-breadcrumb separator="/">
       <el-breadcrumb-item :to="{ path: '/' }">Homepage</el-breadcrumb-item>
-      <el-breadcrumb-item>Emission calculator</el-breadcrumb-item>
+      <el-breadcrumb-item>Emission Calculator</el-breadcrumb-item>
     </el-breadcrumb>
     <div class="headerPic">
-      <img src="../assets/car.gif" alt="" class="car_gif">
+      <!-- <img src="../assets/car.gif" alt="" class="car_gif"> -->
       <h2 class="carHeader">Try our green calculate for your vehicle</h2>
     </div>
     <el-row :gutter="0">
@@ -14,7 +14,7 @@
           <div class="emission-content">
             <br><br>
             <h3>
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Three main harmful effects which are caused by carbon emissions per gram: 
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Three main harmful effects caused by carbon emissions: 
             </h3>  
             <p class="carText">
               In terms of the aspect of <span class="bold">climate change</span>, the United Nations stated that an increase of 1
@@ -43,7 +43,7 @@
       <el-col :span="8"
         ><div class="grid-content bg-purple">
           <el-card>
-            <el-tag effect="dark" type="success" class="cal_tag"> Carbon dioxide calculator
+            <el-tag effect="dark" type="info" class="cal_tag"> Carbon dioxide calculator
 </el-tag>
             <el-form
               :model="ruleForm"
@@ -81,11 +81,11 @@
 
               <div class="text item"></div>
               <div class="text item">
-                <el-button type="success" round @click="submitForm('ruleForm')" class="checkButton"
+                <el-button type="info" @click="submitForm('ruleForm')" class="checkButton"
                 
                   >check</el-button
                 >
-                <el-button type="success" round @click="resetForm('ruleForm')" class="resetButton">reset</el-button>
+                <el-button type="info" @click="resetForm('ruleForm')" class="resetButton">reset</el-button>
               </div>
             </el-form>
 
@@ -93,15 +93,16 @@
               Your driving raises the global temperature by
               <el-tag type="danger" effect="dark">{{ total }}</el-tag> ℃
             </div>
-            <hr>
             <div>
               <p class="askText">
-                We are providing more data on vehicle carbon emissions.
-                Want to know?
+                <em>We are providing more data on vehicle carbon emissions.
+                Want to know?</em>
               </p>
             </div>
             <div>
-              <el-button type="success" round><a href="haha.html">Click here!</a></el-button>
+              <router-link to="/facts" exact>
+              <el-button type="info">Click here!</el-button>
+            </router-link>
             </div>
             <div class="gif02Container">
               <img src="../assets/carGIF02.gif" alt="" class="gif02">
@@ -157,7 +158,7 @@ export default {
   methods: {
     async fetchBrands() {
       try {
-        const response = await this.$http.get("https://backendtp23.onrender.com/mysql1");
+        const response = await this.$http.get("https://backendtp234.onrender.com/mysql1");
         console.log(response.data);
         this.brands = JSON.parse(JSON.stringify(response.data)).map(car => car.Make);
 
@@ -171,7 +172,7 @@ export default {
         if(this.selectedBrand){
             try {
         const response = await this.$http.get(
-          `https://backendtp23.onrender.com/carbon?message=${this.selectedBrand}`
+          `https://backendtp234.onrender.com/carbon?message=${this.selectedBrand}`
         );
         this.carbonData = JSON.parse(JSON.stringify(response.data)).map(car => car.CO2);
       } catch (error) {
@@ -234,15 +235,17 @@ color: #fff;
 }
 .headerPic {
   height: 90px;
-  background-color: #8ecd94;
+  /* background-color: #8ecd94; */
   overflow: hidden;
+  background-image: url(../assets/surveyBG.jpg);
+  text-align: center;
 
 }
 .emission-content {
   height: 600px;
-  background-image: url(../assets/car_bg.png);
+  /* background-image: url(../assets/harmHomePage.jpg); */
   background-size: auto 100%;
-  color: white;
+  color: black;
   overflow: hidden;
 }
 .el-row {
@@ -257,6 +260,7 @@ color: #fff;
 }
 .carText {
   margin: 20px;
+  font-family: "Open Sans", sans-serif;
 }
 .car_gif{
   width: 120px;
@@ -266,7 +270,7 @@ color: #fff;
 
 .bold{
   font-weight: bold;
-  color: blanchedalmond;
+  color: rgb(60, 26, 16);
 }
 .cal_tag{
   margin-bottom: 8%;
@@ -277,13 +281,14 @@ color: #fff;
 .carHeader{
   color: white;
   transition: transform 0.5s ease;
+
 }
 .carHeader:hover {
     transform: scale(1.1); 
     transition: transform 0.5s ease; 
 }
 .askText{
-  color: #7ec9d3;
+  color: #383d3e;
   
 }
 .gif02{

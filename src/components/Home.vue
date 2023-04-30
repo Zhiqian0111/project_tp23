@@ -18,11 +18,11 @@
             router
             >
               <el-menu-item :index="'/'+'main'" class="homeClick">Homepage</el-menu-item>
-                <el-menu-item :index="'/'+'carEmission'" class="noLine">Emission calculator</el-menu-item>
+                <el-menu-item :index="'/'+'carEmission'" class="noLine">Emission Calculator</el-menu-item>
                 <el-menu-item :index="'/'+'search'" class="noLine">Emission Search</el-menu-item>
                 <el-menu-item :index="'/'+'facts'" class="noLine">Car Emission Facts</el-menu-item>
-                <el-menu-item :index="'/'+'survey'" class="noLine">Emission survey</el-menu-item>
-                <el-menu-item :index="'/'+'trend'" class="noLine">Emission trend</el-menu-item>
+                <el-menu-item :index="'/'+'survey'" class="noLine">Emission Survey</el-menu-item>
+                <el-menu-item :index="'/'+'trend'" class="noLine">Emission Trend</el-menu-item>
             </el-menu>
           </div></el-col>
 
@@ -90,6 +90,7 @@ height: 100%;
 .noLine:focus {
   border-bottom: none !important;
   color: #dbcdb1 !important;
+  background-color: transparent !important;
 }
 .el-menu-item{
   font-size: 14px;
