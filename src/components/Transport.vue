@@ -161,6 +161,7 @@ export default {
   },
   methods: {
     async fetchData() {
+      this.oriDistance = true
       try {
         const response = await this.$http.get(
           "https://backendtp234.onrender.com/get_fulldata2"
@@ -169,6 +170,7 @@ export default {
         this.data = this.data.sort((a, b) => a.co2 - b.co2);
         console.log(this.data);
         this.originData = this.data;
+        this.oriDistance = false
       } catch (error) {
         console.log(error);
       }
