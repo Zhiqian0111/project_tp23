@@ -24,7 +24,9 @@
       <router-link to="/trend" exact>
         <el-button type="info" class="trend">Emission Trend</el-button>
       </router-link>
+      <router-link to="/damage" exact>
       <el-button type="info" class="trend">Emission Damage</el-button>
+    </router-link>
       <h2>Carbon emissions & vehicles</h2>
       <el-row :gutter="5">
         <el-col :span="12"
