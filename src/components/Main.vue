@@ -3,7 +3,7 @@
     <el-backtop></el-backtop>
 
     <div class="image-container">
-      <img src="../assets/backgroundGIF.gif" alt="" />
+      <img src="../assets/homepageCarEmission.gif" alt="" />
       <div class="text-container">
         <h1>Focus on carbon emissions from vehicles</h1>
         <h3>Protect Our Earth, Reduce Carbon Pollution</h3>
@@ -61,7 +61,7 @@
       <h2>Some Suggestion</h2>
       <h3>Only by taking action can we protect our environment.</h3>
       <el-row type="flex" class="SuggestionArea" justify="space-around">
-        <el-col :span="8"
+        <el-col :span="9"
           ><div class="grid-content bg-purple">
             <router-link to="/survey" exact>
               <button class="image-button">
@@ -74,7 +74,7 @@
           </div></el-col
         >
 
-        <el-col :span="8"
+        <!-- <el-col :span="8"
           ><div class="grid-content bg-purple">
             <button class="image-button">
               <img src="../assets/summer.jpeg" alt="" />
@@ -83,15 +83,17 @@
               </div>
             </button>
           </div></el-col
-        >
-        <el-col :span="8"
+        > -->
+        <el-col :span="9"
           ><div class="grid-content bg-purple">
+            <router-link to="/transport" exact>
             <button class="image-button">
               <img src="../assets/autumn.jpg" alt="" />
               <div class="button-overlay">
                 <span class="button-text">low carbon transport</span>
               </div>
             </button>
+            </router-link>
           </div></el-col
         >
       </el-row>
@@ -180,7 +182,7 @@ margin-right: 15px !important;
   width: 100%;
   height: 100%;
   background-color: black;
-  opacity: 0.5;
+  opacity: 0.62;
 }
 
 .text-container {
