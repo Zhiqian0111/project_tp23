@@ -17,7 +17,7 @@
       airplanes, ships, and boats.
     </p>
     <p>
-      We offer a navigation feature taht you can select your departure and
+      We offer a navigation feature that you can select your departure and
       destination, view your route, and compare the carbon emissions of each
       mode of transport.
     </p>
@@ -102,7 +102,6 @@
     <el-dialog title="tips" :visible.sync="dialogVisible" width="50%">
       <span>Please select your departure and destination.</span>
       <span slot="footer" class="dialog-footer">
-        <!-- <el-button @click="dialogVisible = false">取 消</el-button> -->
         <el-button type="primary" @click="dialogVisible = false">OK</el-button>
       </span>
     </el-dialog>
@@ -131,8 +130,31 @@
           reduce the number of cars on the road, which can reduce carbon
           emissions. Carpooling can also save money on fuel and parking.
         </p>
+        
       </div></el-col
     >
+    <el-row>
+      <el-col :span="24">
+      <div class="grid-content bg-purple">
+        <p><em><strong>Driving is the most common mode of transportation, but their carbon emissions can have a significant and detrimental impact on the environment. If you want to learn more about this issue, please click here.
+          
+        </strong></em>
+        
+        </p>
+        <router-link to="/carEmission" exact>
+        <el-button>Emission Calculator</el-button>
+      </router-link>
+        
+      </div>
+    </el-col>
+    <!-- <el-col :span="4">
+      <div class="grid-content bg-purple">
+        <el-button></el-button>
+      </div>
+    </el-col> -->
+
+    </el-row>
+    
   </div>
 </template>
 
@@ -176,11 +198,7 @@ export default {
       }
     },
     deleteCSS() {
-      // const domDelete = document.querySelector('.esri-directions__save-section')
-      // domDelete.style.display = "none !important"
-      // console.log(domDelete)
-      // const delete2 = document.querySelector('.esri-directions__toolbar-section')
-      // delete2.style.display = "none !important"
+
     },
 
     fetchDistance(distance) {
@@ -212,7 +230,7 @@ export default {
 
           var myChart = echarts.init(newDiv);
 
-          // 指定图表的配置项和数据
+          
           var option = {
             title: {
               text: "Carbon Emission of Transportation Modes",
@@ -237,14 +255,14 @@ export default {
             ],
           };
 
-          // 使用刚指定的配置项和数据显示图表。
+          
           myChart.setOption(option);
 
           bar.appendChild(newDiv);
         } else {
           var newDiv = document.createElement("div");
 
-          // 设置div元素的内容和样式
+         
           newDiv.id = "newDiv";
           newDiv.style.padding = "10px";
           newDiv.style.width = "1000px";
@@ -254,7 +272,7 @@ export default {
 
           var myChart = echarts.init(newDiv);
 
-          // 指定图表的配置项和数据
+          
           var option = {
             title: {
               text: "Carbon Emission of Transportation Modes",
@@ -279,7 +297,6 @@ export default {
             ],
           };
 
-          // 使用刚指定的配置项和数据显示图表。
           myChart.setOption(option);
 
           bar.appendChild(newDiv);
