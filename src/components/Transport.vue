@@ -21,62 +21,9 @@
       destination, view your route, and compare the carbon emissions of each
       mode of transport.
     </p>
-    <!-- <img src="../assets/travelChart.png" alt="" /> -->
-    <!-- <h3>low carbon transport suggestion</h3> -->
-    <el-row class="suggestionArea">
-      <!-- <el-col :span="12"
-        ><div class="grid-content bg-purple">
-          <p>
-            1.Walk or Cycle: Walking or cycling for short trips is an excellent
-            way to reduce carbon emissions. These modes of transportation
-            produce zero emissions and are also good for your health.
-          </p>
-          <p>
-            2.Public Transportation: Taking public transportation like buses,
-            trains, and trams is a more sustainable option than driving a car.
-            Public transportation uses less fuel per passenger, which means
-            lower carbon emissions per person.
-          </p>
-          <p>
-            3.Electric Vehicles: Electric vehicles (EVs) are becoming more
-            affordable and accessible. They produce zero emissions when driven
-            and can be charged using renewable energy sources like solar power.
-          </p>
-          <p>
-            4.Carpooling: Carpooling with colleagues or friends is an easy way
-            to reduce the number of cars on the road, which can reduce carbon
-            emissions. Carpooling can also save money on fuel and parking.
-          </p>
-        </div></el-col
-      > -->
-      <!-- <el-col :span="12"
-        ><div class="grid-content bg-purple-light">
-          <el-tag type="info" size="medium" effect="light"
-            >Carbon footprint of travel calculator</el-tag
-          >
-          <div class="selector">
-            <label>Way of travel:</label
-            ><el-select v-model="value" placeholder="select travel way">
-              <el-option
-                v-for="item in options"
-                :key="item.value"
-                :label="item.label"
-                :value="item.value"
-              >
-              </el-option>
-            </el-select>
-            <br />
-            <label>Year:</label>
-            <el-input
-              v-model="input"
-              placeholder="Please input years"
-            ></el-input>
-            <br />
 
-            <el-button type="info" round>submit</el-button>
-          </div>
-        </div></el-col
-      > -->
+    <el-row class="suggestionArea">
+
     </el-row>
 
     <div class="arcgis-map">

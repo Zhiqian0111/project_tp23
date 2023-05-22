@@ -28,9 +28,11 @@
             <el-menu-item :index="'/' + 'facts'" class="noLine"
               >Car Emission Facts</el-menu-item
             >
-            <el-menu-item :index="'/' + 'survey'" class="noLine"
-              >Emission Survey</el-menu-item
+
+            <el-menu-item :index="'/' + 'search'" class="noLine"
+              >Car Emission Search</el-menu-item
             >
+
 
 
             </el-submenu>
@@ -39,8 +41,9 @@
               >Emission Damage</el-menu-item
             >
 
-            <el-menu-item :index="'/' + 'search'" class="noLine"
-              >Car Emission Search</el-menu-item
+
+            <el-menu-item :index="'/' + 'survey'" class="noLine"
+              >Emission Survey</el-menu-item
             >
             <el-menu-item :index="'/' + 'trend'" class="noLine"
               >Emission Trend</el-menu-item
